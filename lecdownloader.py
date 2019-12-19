@@ -99,7 +99,7 @@ for (videoNum,video) in enumerate(videos,1):
         downloadButton = driver.find_element_by_class_name("downloadBtn")
         downloadButton.click()
         time.sleep(args.waitTime)
-        print(" " + str(videoNum), end ="")
+        print(" " + str(videoNum), end ="", flush=True)
     else:
         print ("Skipped video # {}".format(videoNum))
         
